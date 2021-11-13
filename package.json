@@ -1,0 +1,45 @@
+{
+  "name": "tasklist",
+  "version": "1.0.0",
+  "description": "Organizador de tarefas simples para o dia-a-dia de trabalho.",
+  "main": "./src/api/server.js",
+  "scripts": {
+    "test": "nyc mocha ./src/tests/**/*$NAME*.test.js --exit",
+    "dev": "nodemon .",
+    "start": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tarcisio-Menezes/taskList.git"
+  },
+  "keywords": [
+    "Node.js",
+    "Express",
+    "MongoDB"
+  ],
+  "author": "Tarcísio Menezes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tarcisio-Menezes/taskList/issues"
+  },
+  "homepage": "https://github.com/Tarcisio-Menezes/taskList#readme",
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^9.1.3",
+    "mongodb-memory-server": "^6.9.6",
+    "nodemon": "^2.0.14",
+    "nyc": "^15.1.0",
+    "sinon": "^11.1.2"
+  },
+  "dependencies": {
+    "@joi/date": "^2.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "eslint-config-trybe-backend": "^1.0.4",
+    "express": "^4.17.1",
+    "express-rescue": "^1.1.31",
+    "joi": "^17.4.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^4.1.3"
+  }
+}
